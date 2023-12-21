@@ -10,7 +10,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@CrossOrigin(origins = "https://cos4h.github.io, 191.95.147.217")
+@CrossOrigin(origins = """
+        https://cos4h.github.io, 191.95.147.217, 2606:50c0:8002::153,
+                  2606:50c0:8000::153,
+                  2606:50c0:8001::153,
+                  2606:50c0:8003::153,
+                  185.199.109.153,
+                  185.199.108.153,
+                  185.199.111.153,
+                  185.199.110.153""")
 @RestController
 @RequestMapping("/api/employees")
 public class EmployeeControoller {
